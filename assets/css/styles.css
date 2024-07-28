@@ -682,7 +682,7 @@ body::-webkit-scrollbar-thumb {
 .visit-btn {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #4f46e5;
+    background-color: #141259;
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -690,7 +690,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .visit-btn:hover {
-    background-color: #3730a3;
+    background-color: #2A95BF;
 }
 
 .team-section {
