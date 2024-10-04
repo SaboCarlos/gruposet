@@ -1,583 +1,603 @@
 <!DOCTYPE html>
 <html lang="pt">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="O Grupo Sét é uma empresa dedicada a fornecer soluções inovadoras e eficientes em tecnologia e consultoria. Nossa missão é ajudar empresas e indivíduos a alcançar seus objetivos através de serviços de alta qualidade e suporte especializado. Com uma equipe experiente e comprometida, garantimos que nossos clientes recebam o melhor em termos de desenvolvimento web, suporte técnico e consultoria econômica e informática.">
-    <meta name="keywords" content="Grupo Sét, tecnologia, consultoria, desenvolvimento web, suporte técnico, consultoria econômica, consultoria informática">
-    <meta name="author" content="Grupo Sét">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="O Grupo Sét é uma empresa dedicada a fornecer soluções inovadoras e eficientes em tecnologia e consultoria. Nossa missão é ajudar empresas e indivíduos a alcançar seus objetivos através de serviços de alta qualidade e suporte especializado. Com uma equipe experiente e comprometida, garantimos que nossos clientes recebam o melhor em termos de desenvolvimento web, suporte técnico e consultoria econômica e informática.">
+        <meta name="keywords" content="Grupo Sét, tecnologia, consultoria, desenvolvimento web, suporte técnico, consultoria econômica, consultoria informática">
+        <meta name="author" content="Grupo Sét">
 
-    <title>Grupo Sét - Soluções Inovadoras em Tecnologia e Consultoria</title>
-    <link rel="stylesheet" href="/assets/css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mulish&family=Poppins:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
-    <link rel="manifest" href="./site.webmanifest">
+        <title>Grupo Sét - Soluções Inovadoras em Tecnologia e Consultoria</title>
+        <link rel="stylesheet" href="/assets/css/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mulish&family=Poppins:wght@400;500;600;700;800&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+        <link rel="manifest" href="./site.webmanifest">
 
-</head>
+    </head>
 
-<body class="light-mode">
+    <body class="light-mode">
 
-    <header class="header" data-header>
-        <div class="container">
+        <header class="header" data-header>
+            <div class="container">
 
-            <a href="#home" class="logo">
-                <img src="logo-dia.png" alt="Logo Diurno" class="logo-dia">
-                <img src="logo-noite.png" alt="Logo Noturno" class="logo-noite">
-            </a>
+                <a href="#home" class="logo">
+                    <img src="logo-dia.png" alt="Logo Diurno" class="logo-dia">
+                    <img src="logo-noite.png" alt="Logo Noturno" class="logo-noite">
+                </a>
+            
 
-            <nav class="navbar" data-navbar>
+                <nav class="navbar" data-navbar>
 
-                <ul class="navbar-list">
+                    <ul class="navbar-list">
+
+                        <li>
+                            <a href="#home" class="navbar-link" data-nav-link>Início</a>
+                        </li>
+
+                        <li>
+                            <a href="#servico" class="navbar-link" data-nav-link>Serviços</a>
+                        </li>
+
+                        <li>
+                            <a href="#portfolio" class="navbar-link" data-nav-link>Portfólio</a>
+                        </li>
+
+                        <li>
+                            <a href="#equipe" class="navbar-link" data-nav-link>Equipe</a>
+                        </li>
+                        <li>
+                            <a href="./assets/docs/Profile-Company-GrupoSet-1.pdf" target="_blank" class="navbar-link" data-nav-link>Profile Company</a>
+                        </li>
+
+                        <li>
+                            <a href="#contact" class="navbar-link" data-nav-link>Contacte-nos</a>
+                        </li>
+
+                    </ul>
+                </nav>
+                <div class="navegacao">
+                    <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
+                        <span class="line line-1"></span>
+                        <span class="line line-2"></span>
+                        <span class="line line-3"></span>
+                    </button>
+                    <button class="mode-toggle" onclick="toggleMode()">
+                        <i class="fas fa-moon moon-icon"></i>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <article>
+
+                <section class="section hero animate__animated animate__backInLeft" id="home" aria-label="hero">
+                    <div class="container">
+
+                        <div class="hero-content">
+
+
+                            <h1 class="h1 hero-title">Bem-vindo ao <br> Grupo Sét</h1>
+                            <div class="hero-description">
+                                <p>
+                                    O Grupo Sét é uma empresa dedicada a fornecer soluções inovadoras e eficientes em
+                                    tecnologia e consultoria. Nossa missão é ajudar empresas e indivíduos a alcançar seus
+                                    objetivos através de serviços de alta qualidade e suporte especializado. Com uma equipe
+                                    experiente e comprometida, garantimos que nossos clientes recebam o melhor em termos de
+                                    desenvolvimento web, suporte técnico e consultoria econômica e informática.
+                                </p>
+                            </div>
+                            <div class="hero-buttons">
+                                <!--<a href="" class="btn btn-github">
+                                    <i class="fa-brands fa-linkedin "></i>
+
+                                </a>
+                                <a href="" class="btn btn-figma">
+                                    <i class="fa-brands fa-facebook"></i>
+                                </a>-->
+                                <a href="https://www.instagram.com/gruposet.lda?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="btn btn-instagram">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                                <!--<a href="" class="btn btn-whatsapp">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </a>-->
+                            </div>
+
+                        </div>
+
+                        <figure class="hero-image">
+                            <img src="./assets/img/hero.png" alt="Bernard Smith" class="img-cover">
+                        </figure>
+                    </div>
+                </section>
+                <!--   <section class="logo-section animate__animated animate__backInUp">
+                    <div class="container">
+                        <div class="logos">
+                            <a href="#"><img src="assets/img/logo-adobe.png" alt="Airbnb"></a>
+                            <a href="#"><img src="assets/img/logo-google.png" alt="Google"></a>
+                            <a href="#"><img src="assets/img/logo-paypal.png" alt="Microsoft"></a>
+                            <a href="#"><img src="assets/img/logo-puma.png" alt="Spotify"></a>
+                            <a href="#"><img src="assets/img/logo-puma.png" alt="Spotify"></a>
+                            <a href="#"><img src="assets/img/logo-puma.png" alt="Spotify"></a>
+                        </div>
+                    </div>
+                </section>-->
+                <section class="services-section" id="servico" aria-label="servico">
+                    <div class="container">
+                        <div class="animate__animated animate__fadeIn">
+                            <h2 class="h1 hero-title text-center">Nossos Serviços</h2>
+                            <p style="margin-bottom: 3rem;text-align: center;">Descubra como podemos transformar sua
+                                presença
+                                online, otimizar seu suporte técnico e aprimorar sua gestão econômica e tecnológica com
+                                nossas
+                                soluções inovadoras e personalizadas.</p>
+                        </div>
+
+                        <!-- Row 1 -->
+                        <div class="row animate__animated animate__fadeInRight">
+                            <div class="text-content">
+                                <h3 class="h3 hero-title half-border">1.Criação de Aplicações Web/Mobile </h3>
+                                <p>
+                                    A criação de websites envolve o desenvolvimento de plataformas online personalizadas e
+                                    responsivas, que atendem às necessidades específicas de cada cliente. Com um design
+                                    moderno e intuitivo, garantimos que os sites sejam otimizados para SEO e integrem
+                                    funcionalidades avançadas, como e-commerce e sistemas de gerenciamento de conteúdo.
+                                </p>
+                                <!-- List -->
+                                <ul class="list">
+                                    <li>
+                                        <svg class="icon" fill="currentColor" viewBox="0 0 20 20"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                        <span>Desenvolvimento de sites personalizados e responsivos</span>
+                                    </li>
+                                    <li>
+                                        <svg class="icon" fill="currentColor" viewBox="0 0 20 20"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                        <span>Design moderno e intuitivo</span>
+                                    </li>
+                                    <li>
+                                        <svg class="icon" fill="currentColor" viewBox="0 0 20 20"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                        <span>Integração de funcionalidades avançadas</span>
+                                    </li>
+                                    <li>
+                                        <svg class="icon" fill="currentColor" viewBox="0 0 20 20"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                        <span>Otimização para SEO</span>
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+                            <img src="assets/img/4115337.jpg" class="image 1">
+
+                        </div>
+                        <!-- Row 2 -->
+                        <div class="row reverse animate__animated animate__fadeInLeft">
+
+                            <div class="text-content">
+                                <h3 class="h3 hero-title half-border">2.Helpdesk</h3>
+                                <p style="font-size: 16px;">
+                                    Nosso serviço de Helpdesk oferece suporte técnico especializado para resolver
+                                    rapidamente problemas de TI. Além disso, realizamos manutenção preventiva e corretiva,
+                                    garantindo a gestão eficiente de redes e infraestrutura de TI, para que as operações do
+                                    seu negócio não sejam interrompidas.
+                                </p>
+                                <!-- List -->
+                                <ul class="list">
+                                    <li>
+                                        <svg class="icon" fill="currentColor" viewBox="0 0 20 20"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                        <span>Suporte técnico especializado</span>
+                                    </li>
+                                    <li>
+                                        <svg class="icon" fill="currentColor" viewBox="0 0 20 20"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                        <span>Solução rápida de problemas de TI</span>
+                                    </li>
+                                    <li>
+                                        <svg class="icon" fill="currentColor" viewBox="0 0 20 20"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                        <span>Manutenção preventiva e corretiva</span>
+                                    </li>
+                                    <li>
+                                        <svg class="icon" fill="currentColor" viewBox="0 0 20 20"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                        <span>Gestão de redes e infraestrutura de TI</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <img class="image" src="assets/img/help.svg" alt="feature image 2">
+                        </div>
+                        <!-- Row 3-->
+                        <div class="row animate__animated animate__fadeInRight">
+                            <div class="text-content">
+                                <h3 class="h3 hero-title half-border">3.Consultoria Econômica e Informática</h3>
+                                <p style="font-size:16px;">
+                                    A consultoria econômica e informática proporciona uma análise e planejamento estratégico
+                                    completos para melhorar a gestão financeira e econômica das empresas. Implementamos
+                                    sistemas de informação eficazes e oferecemos treinamentos e workshops em tecnologia e
+                                    gestão para capacitar sua equipe
+                                </p>
+                                <!-- List -->
+                                <ul class="list">
+                                    <li>
+                                        <svg class="icon" fill="currentColor" viewBox="0 0 20 20"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                        <span>Análise e planejamento estratégico</span>
+                                    </li>
+                                    <li>
+                                        <svg class="icon" fill="currentColor" viewBox="0 0 20 20"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                        <span>Consultoria em gestão financeira e econômica</span>
+                                    </li>
+                                    <li>
+                                        <svg class="icon" fill="currentColor" viewBox="0 0 20 20"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                        <span>Implementação de sistemas de informação</span>
+                                    </li>
+                                    <li>
+                                        <svg class="icon" fill="currentColor" viewBox="0 0 20 20"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                        <span>Treinamentos e workshops em tecnologia e gestão</span>
+                                    </li>
+                                </ul>
+
+                            </div>
+
+                            <img src="assets/img/7199773.jpg" class="image">
+
+                        </div>
+                        <!-- Row 4-->
+                        <div class="row reverse animate__animated animate__fadeInLeft">
+                            <div class="text-content">
+                                <h3 class="h3 hero-title half-border">4. Marketing</h3>
+                                <p style="font-size: 16px;">
+                                    Nosso serviço de marketing abrange a criação de identidade visual, gestão de redes
+                                    sociais e criação de conteúdos, ajudando sua marca a se destacar no mercado e atingir
+                                    seu público-alvo de forma eficaz.
+                                </p>
+                                <!-- List -->
+                                <ul class="list">
+                                    <li>
+                                        <svg class="icon" fill="currentColor" viewBox="0 0 20 20"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                        <span>Criação de identidade visual</span>
+                                    </li>
+                                    <li>
+                                        <svg class="icon" fill="currentColor" viewBox="0 0 20 20"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                        <span>Gestão de redes sociais</span>
+                                    </li>
+                                    <li>
+                                        <svg class="icon" fill="currentColor" viewBox="0 0 20 20"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                        <span>Criação de conteúdos</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <img class="image" src="assets/img/5895736.jpg" alt="feature image 4">
+                        </div>
+                    </div>
+                </section>
+                <section class="portfolio-section animate__animated animate__fadeIn" id="portfolio" aria-label="portfolio">
+                    <div class="container">
+                        <h2 class="h1 hero-title">Nosso Portfólio</h2>
+                        <p>Explore nossos projetos mais recentes e veja como ajudamos nossos clientes a alcançar seus
+                            objetivos com soluções inovadoras e personalizadas.</p>
+                        <div class="portfolio-grid">
+                            <div class="portfolio-item">
+                                <img src="assets/img/folio1.png" alt="Projeto 1">
+                                <div class="overlay">
+                                    <h3>Sabo Alberto</h3>
+                                    <a href="https://sabocarlos.github.io/saboportfolio/" class="visit-btn">Visitar</a>
+                                </div>
+                            </div>
+                            <div class="portfolio-item">
+                                <img src="assets/img/folio3.png" alt="Projeto 2">
+                                <div class="overlay">
+                                    <h3>Mantra</h3>
+                                    <a href="http://mantra.co.mz" class="visit-btn">Visitar</a>
+                                </div>
+                            </div>
+                            <div class="portfolio-item">
+                                <img src="assets/img/folio2.jpg" alt="Projeto 3">
+                                <div class="overlay">
+                                    <h3>Revista Ndzila</h3>
+                                    <a href="http://ndzila.co.mz" class="visit-btn">Visitar</a>
+                                </div>
+                            </div>
+                            <div class="portfolio-item">
+                                <img src="assets/img/folio4.jpg" alt="Projeto 4">
+                                <div class="overlay">
+                                    <h3>Nhonga</h3>
+                                    <a href="http://nhongamz.com" class="visit-btn">Visitar</a>
+                                </div>
+                            </div>
+                            <div class="portfolio-item">
+                                <img src="assets/img/folio5.jpg" alt="Projeto 5">
+                                <div class="overlay">
+                                    <h3>Set Connect</h3>
+                                    <a href="setconnect.vercel.app" class="visit-btn">Visitar</a>
+                                </div>
+                            </div>
+                            <div class="portfolio-item">
+                                <img src="assets/img/folio6.jpg" alt="Projeto 6">
+                                <div class="overlay">
+                                    <h3>Marcooden</h3>
+                                    <a href="http://marcooden.com" class="visit-btn">Visitar</a>
+                                </div>
+                            </div>
+                            <div class="portfolio-item">
+                                <img src="assets/img/folio7.jpg" alt="Projeto 5">
+                                <div class="overlay">
+                                    <h3>Chat Community</h3>
+                                    <a href="gsetcommunity.com" class="visit-btn">Visitar</a>
+                                </div>
+                            </div>
+                            <div class="portfolio-item">
+                                <img src="assets/img/folio8.jpg" alt="Projeto 8">
+                                <div class="overlay">
+                                    <h3>jotec</h3>
+                                    <a href="jotec.vercel.app" class="visit-btn">Visitar</a>
+                                </div>
+                            </div>
+                            <div class="portfolio-item">
+                                <img src="assets/img/folio9.jpg" alt="Projeto 9">
+                                <div class="overlay">
+                                    <h3>OJM Connect</h3>
+                                    <a href="ojmconnect.com" class="visit-btn">Visitar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="team-section animate__animated animate__fadeIn" id="equipe" aria-label="equipe">
+                    <div class="container">
+                        <h2 class="h1 hero-title">Nosso Time</h2>
+                        <p>Conheça os profissionais dedicados e talentosos que fazem parte do Grupo Sét. Nossa equipe está
+                            comprometida em fornecer soluções inovadoras e eficientes para nossos clientes.</p>
+                        <div class="team-grid">
+                            <div class="team-member">
+                                <div><img src="assets/img/person_1-min.jpg" alt="Membro da equipe 1" class="member-photo">
+                                </div>
+
+                                <div class="member-info">
+                                    <h3>Jean Del Castillo</h3>
+                                    <p>Economista</p>
+                                    <p class="profile-description">Jean Del Castillo é um economista talentoso do Grupo Sét. Ele possui vasta experiência em análises econômicas e planejamento financeiro.</p>
+                                </div>
+                                
+                            </div>
+                            <div class="team-member">
+                                <img src="assets/img/person_2-min.jpg" alt="Membro da equipe 2" class="member-photo">
+                                <div class="member-info">
+                                    <h3>Sabo Alberto</h3>
+                                    <p>TI/Programador</p>
+                                    <p class="profile-description">Sabo Alberto é um talentoso profissional de TI e programador no Grupo Sét. Com uma vasta experiência em desenvolvimento de software e suporte técnico.</p>
+                                </div>
+                                
+                            </div>
+                            <div class="team-member">
+                                <img src="assets/img/person_3-min.jpg" alt="Membro da equipe 3" class="member-photo">
+                                <div class="member-info">
+                                    <h3>Osman Machavate</h3>
+                                    <p>TI/Programador</p>
+                                    <p class="profile-description">Osman Machavate é um talentoso profissional de TI e programador no Grupo Sét. Com uma sólida experiência em desenvolvimento de software e suporte técnico.</p>
+                                </div>
+                                
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+                <section class="newsletter-section animate__animated animate__fadeIn">
+                    <div class="container" id="mc_embed_shell">
+                        <div id="mc_embed_signup">
+                            <h2 class="h3">Inscreva-se na Nossa Newsletter</h2>
+                            <p>Receba as últimas atualizações e novidades diretamente no seu email. Inscreva-se agora e fique
+                                por dentro de tudo que acontece no Grupo Sét.</p>
+                            <form action="https://setgrupo.us9.list-manage.com/subscribe/post?u=2044b1a0bc0d3040ac95ea6a5&amp;id=e9715d45bf&amp;f_id=008557e1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="newsletter-form validate" target="_blank">
+                                <div class="mc-field-group">
+                                    <input type="email" placeholder="Digite seu email"  name="EMAIL" id="mce-EMAIL" required>
+                                </div>
+                                <div id="mce-responses" class="clear foot">
+                                    <div class="response" id="mce-error-response" style="display: none;"></div>
+                                    <div class="response" id="mce-success-response" style="display: none;"></div>
+                                </div>
+                                <button type="submit" name="subscribe" id="mc-embedded-subscribe" value="Subscribe">
+                                    <span class="span">Inscrever-se</span>
+                                    <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+                                </button>
+                                
+                            </form>
+                        </div>
+                    </div>
+                </section>
+                
+
+                <section class="section contact animate__animated animate__fadeIn" id="contact" aria-label="contact">
+                    <div class="container">
+
+                        <div class="contact-content">
+                            <h2 class="h1 hero-title" style="font-size: 26px;">Contacto-Nos</h2>
+
+                            <p class="section-text">
+                                Pro favor, preencha o formulário nesta seção para entrar em contacto conosco Ou liga.
+                            </p>
+
+                            <ul class="contact-list">
+
+                                <li class="contact-item">
+                                    <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+
+                                    <address class="contact-link">
+                                        Rua da Nachingwea, nº 560, Bairro da Polana Cimento A, Maputo, Moçambique
+                                    </address>
+                                </li>
+
+                                <li class="contact-item">
+                                    <i class="fa-solid fa-phone" aria-hidden="true"></i>
+
+                                    <a href="tel:+258842756666" class="contact-link">+258 84275 6666</a>
+                                </li>
+
+                                <li class="contact-item">
+                                    <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+
+                                    <a href="mailto:comercial@gruposet.com"
+                                        class="contact-link">comercial@setgrupo.com</a>
+                                </li>
+
+
+
+                            </ul>
+
+                        </div>
+
+                        <form action="" class="contact-form" method="POST">
+
+                            <input type="text" name="Name" aria-label="name" placeholder="Nome" required
+                                class="input-field">
+
+                            <input type="email" name="Email" aria-label="email" placeholder="Email" required
+                                class="input-field">
+
+                            <textarea name="Message" aria-label="message" placeholder="Messagem" required
+                                class="input-field"></textarea>
+
+                            <button type="submit" class="submit-btn">
+                                <span class="span">Enviar</span>
+
+                                <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+                            </button>
+
+                        </form>
+
+                    </div>
+                </section>
+
+            </article>
+        </main>
+
+
+        <footer class="footer">
+            <div class="container">
+
+                <p class="copyright">
+                    &copy; 2024 Grupo Set
+                </p>
+
+                <ul class="social-list">
 
                     <li>
-                        <a href="#home" class="navbar-link" data-nav-link>Início</a>
+                        <a href="https://www.facebook.com/sabocarlosalberto" class="social-link">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
                     </li>
 
                     <li>
-                        <a href="#servico" class="navbar-link" data-nav-link>Serviços</a>
+                        <a href="https://www.linkedin.com/in/sabo-alberto-b92b96268" class="social-link">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
                     </li>
 
                     <li>
-                        <a href="#portfolio" class="navbar-link" data-nav-link>Portfólio</a>
+                        <a href="https://www.instagram.com/gruposet.lda?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="social-link">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
                     </li>
-
                     <li>
-                        <a href="#equipe" class="navbar-link" data-nav-link>Equipe</a>
-                    </li>
-
-                    <li>
-                        <a href="#contact" class="navbar-link" data-nav-link>Contacte-nos</a>
+                        <a href="#" class="social-link">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
                     </li>
 
                 </ul>
-            </nav>
-            <div class="navegacao">
-                <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
-                    <span class="line line-1"></span>
-                    <span class="line line-2"></span>
-                    <span class="line line-3"></span>
-                </button>
-                <button class="mode-toggle" onclick="toggleMode()">
-                    <i class="fas fa-moon moon-icon"></i>
-                </button>
+
             </div>
-        </div>
-    </header>
-
-    <main>
-        <article>
-
-            <section class="section hero animate__animated animate__backInLeft" id="home" aria-label="hero">
-                <div class="container">
-
-                    <div class="hero-content">
-
-
-                        <h1 class="h1 hero-title">Bem-vindo ao <br> Grupo Sét</h1>
-                        <div class="hero-description">
-                            <p>
-                                O Grupo Sét é uma empresa dedicada a fornecer soluções inovadoras e eficientes em
-                                tecnologia e consultoria. Nossa missão é ajudar empresas e indivíduos a alcançar seus
-                                objetivos através de serviços de alta qualidade e suporte especializado. Com uma equipe
-                                experiente e comprometida, garantimos que nossos clientes recebam o melhor em termos de
-                                desenvolvimento web, suporte técnico e consultoria econômica e informática.
-                            </p>
-                        </div>
-                        <div class="hero-buttons">
-                            <a href="" class="btn btn-github">
-                                <i class="fa-brands fa-linkedin "></i>
-
-                            </a>
-                            <a href="" class="btn btn-figma">
-                                <i class="fa-brands fa-facebook"></i>
-                            </a>
-                            <a href="" class="btn btn-instagram">
-                                <i class="fa-brands fa-instagram"></i>
-                            </a>
-                            <a href="" class="btn btn-whatsapp">
-                                <i class="fa-brands fa-whatsapp"></i>
-                            </a>
-                        </div>
-
-                    </div>
-
-                    <figure class="hero-image">
-                        <img src="./assets/img/hero.png" alt="Bernard Smith" class="img-cover">
-                    </figure>
-                </div>
-            </section>
-            <section class="logo-section animate__animated animate__backInUp">
-                <div class="container">
-                    <div class="logos">
-                        <a href="#"><img src="assets/img/logo-adobe.png" alt="Airbnb"></a>
-                        <a href="#"><img src="assets/img/logo-google.png" alt="Google"></a>
-                        <a href="#"><img src="assets/img/logo-paypal.png" alt="Microsoft"></a>
-                        <a href="#"><img src="assets/img/logo-puma.png" alt="Spotify"></a>
-                        <a href="#"><img src="assets/img/logo-puma.png" alt="Spotify"></a>
-                        <a href="#"><img src="assets/img/logo-puma.png" alt="Spotify"></a>
-                    </div>
-                </div>
-            </section>
-            <section class="services-section" id="servico" aria-label="servico">
-                <div class="container">
-                    <div class="animate__animated animate__fadeIn">
-                        <h2 class="h1 hero-title text-center">Nossos Serviços</h2>
-                        <p style="margin-bottom: 3rem;text-align: center;">Descubra como podemos transformar sua
-                            presença
-                            online, otimizar seu suporte técnico e aprimorar sua gestão econômica e tecnológica com
-                            nossas
-                            soluções inovadoras e personalizadas.</p>
-                    </div>
-
-                    <!-- Row 1 -->
-                    <div class="row animate__animated animate__fadeInRight">
-                        <div class="text-content">
-                            <h3 class="h3 hero-title half-border">1.Criação de Websites</h3>
-                            <p>
-                                A criação de websites envolve o desenvolvimento de plataformas online personalizadas e
-                                responsivas, que atendem às necessidades específicas de cada cliente. Com um design
-                                moderno e intuitivo, garantimos que os sites sejam otimizados para SEO e integrem
-                                funcionalidades avançadas, como e-commerce e sistemas de gerenciamento de conteúdo.
-                            </p>
-                            <!-- List -->
-                            <ul class="list">
-                                <li>
-                                    <svg class="icon" fill="currentColor" viewBox="0 0 20 20"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                    <span>Desenvolvimento de sites personalizados e responsivos</span>
-                                </li>
-                                <li>
-                                    <svg class="icon" fill="currentColor" viewBox="0 0 20 20"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                    <span>Design moderno e intuitivo</span>
-                                </li>
-                                <li>
-                                    <svg class="icon" fill="currentColor" viewBox="0 0 20 20"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                    <span>Integração de funcionalidades avançadas</span>
-                                </li>
-                                <li>
-                                    <svg class="icon" fill="currentColor" viewBox="0 0 20 20"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                    <span>Otimização para SEO</span>
-                                </li>
-
-                            </ul>
-
-                        </div>
-
-                        <img src="assets/img/4115337.jpg" class="image 1">
-
-                    </div>
-                    <!-- Row 2 -->
-                    <div class="row reverse animate__animated animate__fadeInLeft">
-
-                        <div class="text-content">
-                            <h3 class="h3 hero-title half-border">2.Helpdesk</h3>
-                            <p style="font-size: 16px;">
-                                Nosso serviço de Helpdesk oferece suporte técnico especializado para resolver
-                                rapidamente problemas de TI. Além disso, realizamos manutenção preventiva e corretiva,
-                                garantindo a gestão eficiente de redes e infraestrutura de TI, para que as operações do
-                                seu negócio não sejam interrompidas.
-                            </p>
-                            <!-- List -->
-                            <ul class="list">
-                                <li>
-                                    <svg class="icon" fill="currentColor" viewBox="0 0 20 20"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                    <span>Suporte técnico especializado</span>
-                                </li>
-                                <li>
-                                    <svg class="icon" fill="currentColor" viewBox="0 0 20 20"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                    <span>Solução rápida de problemas de TI</span>
-                                </li>
-                                <li>
-                                    <svg class="icon" fill="currentColor" viewBox="0 0 20 20"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                    <span>Manutenção preventiva e corretiva</span>
-                                </li>
-                                <li>
-                                    <svg class="icon" fill="currentColor" viewBox="0 0 20 20"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                    <span>Gestão de redes e infraestrutura de TI</span>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <img class="image" src="assets/img/help.svg" alt="feature image 2">
-                    </div>
-                    <!-- Row 3-->
-                    <div class="row animate__animated animate__fadeInRight">
-                        <div class="text-content">
-                            <h3 class="h3 hero-title half-border">3.Consultoria Econômica e Informática</h3>
-                            <p style="font-size:16px;">
-                                A consultoria econômica e informática proporciona uma análise e planejamento estratégico
-                                completos para melhorar a gestão financeira e econômica das empresas. Implementamos
-                                sistemas de informação eficazes e oferecemos treinamentos e workshops em tecnologia e
-                                gestão para capacitar sua equipe
-                            </p>
-                            <!-- List -->
-                            <ul class="list">
-                                <li>
-                                    <svg class="icon" fill="currentColor" viewBox="0 0 20 20"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                    <span>Análise e planejamento estratégico</span>
-                                </li>
-                                <li>
-                                    <svg class="icon" fill="currentColor" viewBox="0 0 20 20"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                    <span>Consultoria em gestão financeira e econômica</span>
-                                </li>
-                                <li>
-                                    <svg class="icon" fill="currentColor" viewBox="0 0 20 20"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                    <span>Implementação de sistemas de informação</span>
-                                </li>
-                                <li>
-                                    <svg class="icon" fill="currentColor" viewBox="0 0 20 20"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                    <span>Treinamentos e workshops em tecnologia e gestão</span>
-                                </li>
-                            </ul>
-
-                        </div>
-
-                        <img src="assets/img/7199773.jpg" class="image">
-
-                    </div>
-                    <!-- Row 4-->
-                    <div class="row reverse animate__animated animate__fadeInLeft">
-                        <div class="text-content">
-                            <h3 class="h3 hero-title half-border">4. Marketing</h3>
-                            <p style="font-size: 16px;">
-                                Nosso serviço de marketing abrange a criação de identidade visual, gestão de redes
-                                sociais e criação de conteúdos, ajudando sua marca a se destacar no mercado e atingir
-                                seu público-alvo de forma eficaz.
-                            </p>
-                            <!-- List -->
-                            <ul class="list">
-                                <li>
-                                    <svg class="icon" fill="currentColor" viewBox="0 0 20 20"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                    <span>Criação de identidade visual</span>
-                                </li>
-                                <li>
-                                    <svg class="icon" fill="currentColor" viewBox="0 0 20 20"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                    <span>Gestão de redes sociais</span>
-                                </li>
-                                <li>
-                                    <svg class="icon" fill="currentColor" viewBox="0 0 20 20"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                    <span>Criação de conteúdos</span>
-                                </li>
-                            </ul>
-                        </div>
-                        <img class="image" src="assets/img/5895736.jpg" alt="feature image 4">
-                    </div>
-                </div>
-            </section>
-            <section class="portfolio-section animate__animated animate__fadeIn" id="portfolio" aria-label="portfolio">
-                <div class="container">
-                    <h2 class="h1 hero-title">Nosso Portfólio</h2>
-                    <p>Explore nossos projetos mais recentes e veja como ajudamos nossos clientes a alcançar seus
-                        objetivos com soluções inovadoras e personalizadas.</p>
-                    <div class="portfolio-grid">
-                        <div class="portfolio-item">
-                            <img src="assets/img/folio1.png" alt="Projeto 1">
-                            <div class="overlay">
-                                <h3>Sabo Alberto</h3>
-                                <a href="https://sabocarlos.github.io/saboportfolio/" class="visit-btn">Visitar</a>
-                            </div>
-                        </div>
-                        <div class="portfolio-item">
-                            <img src="assets/img/folio3.png" alt="Projeto 2">
-                            <div class="overlay">
-                                <h3>Mantra</h3>
-                                <a href="http://mantra.co.mz" class="visit-btn">Visitar</a>
-                            </div>
-                        </div>
-                        <div class="portfolio-item">
-                            <img src="assets/img/folio2.jpg" alt="Projeto 3">
-                            <div class="overlay">
-                                <h3>Revista Ndzila</h3>
-                                <a href="http://ndzila.co.mz" class="visit-btn">Visitar</a>
-                            </div>
-                        </div>
-                        <div class="portfolio-item">
-                            <img src="assets/img/folio4.jpg" alt="Projeto 4">
-                            <div class="overlay">
-                                <h3>Nhonga</h3>
-                                <a href="http://nhongamz.com" class="visit-btn">Visitar</a>
-                            </div>
-                        </div>
-                        <div class="portfolio-item">
-                            <img src="assets/img/folio5.jpg" alt="Projeto 5">
-                            <div class="overlay">
-                                <h3>Set Connect</h3>
-                                <a href="setconnect.vercel.app" class="visit-btn">Visitar</a>
-                            </div>
-                        </div>
-                        <div class="portfolio-item">
-                            <img src="assets/img/folio6.png" alt="Projeto 6">
-                            <div class="overlay">
-                                <h3>Marcooden</h3>
-                                <a href="http://marcooden.com" class="visit-btn">Visitar</a>
-                            </div>
-                        </div>
-                        <div class="portfolio-item">
-                            <img src="assets/img/folio7.jpg" alt="Projeto 5">
-                            <div class="overlay">
-                                <h3>Chat Community</h3>
-                                <a href="gsetcommunity.com" class="visit-btn">Visitar</a>
-                            </div>
-                        </div>
-                        <div class="portfolio-item">
-                            <img src="assets/img/folio8.jpg" alt="Projeto 8">
-                            <div class="overlay">
-                                <h3>jotec</h3>
-                                <a href="jotec.vercel.app" class="visit-btn">Visitar</a>
-                            </div>
-                        </div>
-                        <div class="portfolio-item">
-                            <img src="assets/img/folio9.jpg" alt="Projeto 9">
-                            <div class="overlay">
-                                <h3>OJM Connect</h3>
-                                <a href="ojmconnect.com" class="visit-btn">Visitar</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="team-section animate__animated animate__fadeIn" id="equipe" aria-label="equipe">
-                <div class="container">
-                    <h2 class="h1 hero-title">Nosso Time</h2>
-                    <p>Conheça os profissionais dedicados e talentosos que fazem parte do Grupo Sét. Nossa equipe está
-                        comprometida em fornecer soluções inovadoras e eficientes para nossos clientes.</p>
-                    <div class="team-grid">
-                        <div class="team-member">
-                            <div><img src="assets/img/person_1-min.jpg" alt="Membro da equipe 1" class="member-photo">
-                            </div>
-
-                            <div class="member-info">
-                                <h3>Jean Del Castillo</h3>
-                                <p>Economista</p>
-                                <p class="profile-description">Jean Del Castillo é um economista talentoso do Grupo Sét. Ele possui vasta experiência em análises econômicas e planejamento financeiro.</p>
-                            </div>
-                            
-                        </div>
-                        <div class="team-member">
-                            <img src="assets/img/person_2-min.jpg" alt="Membro da equipe 2" class="member-photo">
-                            <div class="member-info">
-                                <h3>Sabo Alberto</h3>
-                                <p>TI/Programador</p>
-                                <p class="profile-description">Sabo Alberto é um talentoso profissional de TI e programador no Grupo Sét. Com uma vasta experiência em desenvolvimento de software e suporte técnico.</p>
-                            </div>
-                            
-                        </div>
-                        <div class="team-member">
-                            <img src="assets/img/person_3-min.jpg" alt="Membro da equipe 3" class="member-photo">
-                            <div class="member-info">
-                                <h3>Osman Machavate</h3>
-                                <p>TI/Programador</p>
-                                <p class="profile-description">Osman Machavate é um talentoso profissional de TI e programador no Grupo Sét. Com uma sólida experiência em desenvolvimento de software e suporte técnico.</p>
-                            </div>
-                            
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-            <section class="newsletter-section animate__animated animate__fadeIn">
-                <div class="container">
-                    <h2 class="h3">Inscreva-se na Nossa Newsletter</h2>
-                    <p>Receba as últimas atualizações e novidades diretamente no seu email. Inscreva-se agora e fique
-                        por dentro de tudo que acontece no Grupo Sét.</p>
-                    <form class="newsletter-form">
-                        <input type="email" placeholder="Digite seu email" required>
-                        <button type="submit">
-                            <span class="span">Inscrever-se</span>
-                            <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
-                        </button>
-                    </form>
-                </div>
-            </section>
-
-            <section class="section contact animate__animated animate__fadeIn" id="contact" aria-label="contact">
-                <div class="container">
-
-                    <div class="contact-content">
-                        <h2 class="h1 hero-title" style="font-size: 26px;">Contacto-Nos</h2>
-
-                        <p class="section-text">
-                            Pro favor, preencha o formulário nesta seção para entrar em contacto conosco Ou liga.
-                        </p>
-
-                        <ul class="contact-list">
-
-                            <li class="contact-item">
-                                <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
-
-                                <address class="contact-link">
-                                    Rua da Nachingwea, nº 560, Bairro da Polana Cimento A, Maputo, Moçambique
-                                </address>
-                            </li>
-
-                            <li class="contact-item">
-                                <i class="fa-solid fa-phone" aria-hidden="true"></i>
-
-                                <a href="tel:+258842756666" class="contact-link">+258 84275 6666</a>
-                            </li>
-
-                            <li class="contact-item">
-                                <i class="fa-solid fa-envelope" aria-hidden="true"></i>
-
-                                <a href="mailto:comercial@gruposet.com"
-                                    class="contact-link">comercial@gruposet.com</a>
-                            </li>
+        </footer>
 
 
 
-                        </ul>
-
-                    </div>
-
-                    <form action="" class="contact-form" method="POST">
-
-                        <input type="text" name="Name" aria-label="name" placeholder="Nome" required
-                            class="input-field">
-
-                        <input type="email" name="Email" aria-label="email" placeholder="Email" required
-                            class="input-field">
-
-                        <textarea name="Message" aria-label="message" placeholder="Messagem" required
-                            class="input-field"></textarea>
-
-                        <button type="submit" class="submit-btn">
-                            <span class="span">Enviar</span>
-
-                            <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
-                        </button>
-
-                    </form>
-
-                </div>
-            </section>
-
-        </article>
-    </main>
-
-
-    <footer class="footer">
-        <div class="container">
-
-            <p class="copyright">
-                &copy; 2024 Grupo Set
-            </p>
-
-            <ul class="social-list">
-
-                <li>
-                    <a href="https://www.facebook.com/sabocarlosalberto" class="social-link">
-                        <i class="fa-brands fa-facebook"></i>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="https://www.linkedin.com/in/sabo-alberto-b92b96268" class="social-link">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="https://www.instagram.com/sabo__ca/" class="social-link">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="social-link">
-                        <i class="fa-brands fa-whatsapp"></i>
-                    </a>
-                </li>
-
-            </ul>
-
-        </div>
-    </footer>
-
-
-
-
-    <script src="assets/js/script.js"></script>
-</body>
+        <script type="text/javascript">
+            function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'pt', includedLanguages: 'en,pt'}, 'google_translate_element');
+            }
+        </script>
+        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+            
+        <script src="assets/js/script.js"></script>
+    </body>
 
 </html>
