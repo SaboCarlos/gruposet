@@ -9,13 +9,25 @@
     <meta name="author" content="Grupo Sét">
 
     <title>Grupo Sét - Soluções Inovadoras em Tecnologia e Consultoria</title>
-    <link rel="stylesheet" href="/assets/css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mulish&family=Poppins:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="/assets/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="/assets/lib/animate/animate.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="/assets/css/style.css" rel="stylesheet">
+    
     <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
@@ -23,584 +35,804 @@
 
     </head>
 
-    <body class="light-mode">
+    <body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner"></div>
+    </div>
+    <!-- Spinner End -->
 
-        <header class="header" data-header>
-            <div class="container">
 
-                <a href="#home" class="logo">
-                    <img src="logo-dia.png" alt="Logo Diurno" class="logo-dia">
-                    <img src="logo-noite.png" alt="Logo Noturno" class="logo-noite">
-                </a>
-            
-
-                <nav class="navbar" data-navbar>
-
-                    <ul class="navbar-list">
-
-                        <li>
-                            <a href="#home" class="navbar-link" data-nav-link>Início</a>
-                        </li>
-
-                        <li>
-                            <a href="#servico" class="navbar-link" data-nav-link>Serviços</a>
-                        </li>
-
-                        <li>
-                            <a href="#portfolio" class="navbar-link" data-nav-link>Portfólio</a>
-                        </li>
-
-                        <li>
-                            <a href="#equipe" class="navbar-link" data-nav-link>Equipe</a>
-                        </li>
-                        <li>
-                            <a href="./assets/docs/Profile-Company-GrupoSet-1.pdf" target="_blank" class="navbar-link" data-nav-link>Profile Company</a>
-                        </li>
-
-                        <li>
-                            <a href="#contact" class="navbar-link" data-nav-link>Contacte-nos</a>
-                        </li>
-
-                    </ul>
-                </nav>
-                <div class="navegacao">
-                    <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
-                        <span class="line line-1"></span>
-                        <span class="line line-2"></span>
-                        <span class="line line-3"></span>
-                    </button>
-                    <button class="mode-toggle" onclick="toggleMode()">
-                        <i class="fas fa-moon moon-icon"></i>
-                    </button>
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark px-5 d-none d-lg-block">
+        <div class="row gx-0">
+            <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                    <small class="me-3 text-light"><i class="fa fa-map-marker-alt me-2"></i>Avenida Nachingwea,Maputo</small>
+                    <small class="me-3 text-light"><i class="fa fa-phone-alt me-2"></i><a href="tel:+258874941509">+258874941509</a></small>
+                    <small class="text-light"><i class="fa fa-envelope-open me-2"></i>comercial@setgrupo.com</small>
                 </div>
             </div>
-        </header>
-
-        <main>
-            <article>
-
-                <section class="section hero animate__animated animate__backInLeft" id="home" aria-label="hero">
-                    <div class="container">
-
-                        <div class="hero-content">
-
-
-                            <h1 class="h1 hero-title">Bem-vindo ao <br> Grupo Sét</h1>
-                            <div class="hero-description">
-                                <p>
-                                    O Grupo Sét é uma empresa dedicada a fornecer soluções inovadoras e eficientes em
-                                    tecnologia e consultoria. Nossa missão é ajudar empresas e indivíduos a alcançar seus
-                                    objetivos através de serviços de alta qualidade e suporte especializado. Com uma equipe
-                                    experiente e comprometida, garantimos que nossos clientes recebam o melhor em termos de
-                                    desenvolvimento web, suporte técnico e consultoria econômica e informática.
-                                </p>
-                            </div>
-                            <div class="hero-buttons">
-                                <!--<a href="" class="btn btn-github">
-                                    <i class="fa-brands fa-linkedin "></i>
-
-                                </a>
-                                <a href="" class="btn btn-figma">
-                                    <i class="fa-brands fa-facebook"></i>
-                                </a>-->
-                                <a href="https://www.instagram.com/gruposet.lda?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="btn btn-instagram">
-                                    <i class="fa-brands fa-instagram"></i>
-                                </a>
-                                <!--<a href="" class="btn btn-whatsapp">
-                                    <i class="fa-brands fa-whatsapp"></i>
-                                </a>-->
-                            </div>
-
-                        </div>
-
-                        <figure class="hero-image">
-                            <img src="./assets/img/hero.png" alt="Bernard Smith" class="img-cover">
-                        </figure>
-                    </div>
-                </section>
-                <!--   <section class="logo-section animate__animated animate__backInUp">
-                    <div class="container">
-                        <div class="logos">
-                            <a href="#"><img src="assets/img/logo-adobe.png" alt="Airbnb"></a>
-                            <a href="#"><img src="assets/img/logo-google.png" alt="Google"></a>
-                            <a href="#"><img src="assets/img/logo-paypal.png" alt="Microsoft"></a>
-                            <a href="#"><img src="assets/img/logo-puma.png" alt="Spotify"></a>
-                            <a href="#"><img src="assets/img/logo-puma.png" alt="Spotify"></a>
-                            <a href="#"><img src="assets/img/logo-puma.png" alt="Spotify"></a>
-                        </div>
-                    </div>
-                </section>-->
-                <section class="services-section" id="servico" aria-label="servico">
-                    <div class="container">
-                        <div class="animate__animated animate__fadeIn">
-                            <h2 class="h1 hero-title text-center">Nossos Serviços</h2>
-                            <p style="margin-bottom: 3rem;text-align: center;">Descubra como podemos transformar sua
-                                presença
-                                online, otimizar seu suporte técnico e aprimorar sua gestão econômica e tecnológica com
-                                nossas
-                                soluções inovadoras e personalizadas.</p>
-                        </div>
-
-                        <!-- Row 1 -->
-                        <div class="row animate__animated animate__fadeInRight">
-                            <div class="text-content">
-                                <h3 class="h3 hero-title half-border">1.Criação de Aplicações Web/Mobile </h3>
-                                <p>
-                                    A criação de websites envolve o desenvolvimento de plataformas online personalizadas e
-                                    responsivas, que atendem às necessidades específicas de cada cliente. Com um design
-                                    moderno e intuitivo, garantimos que os sites sejam otimizados para SEO e integrem
-                                    funcionalidades avançadas, como e-commerce e sistemas de gerenciamento de conteúdo.
-                                </p>
-                                <!-- List -->
-                                <ul class="list">
-                                    <li>
-                                        <svg class="icon" fill="currentColor" viewBox="0 0 20 20"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd"
-                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                                clip-rule="evenodd"></path>
-                                        </svg>
-                                        <span>Desenvolvimento de sites personalizados e responsivos</span>
-                                    </li>
-                                    <li>
-                                        <svg class="icon" fill="currentColor" viewBox="0 0 20 20"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd"
-                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                                clip-rule="evenodd"></path>
-                                        </svg>
-                                        <span>Design moderno e intuitivo</span>
-                                    </li>
-                                    <li>
-                                        <svg class="icon" fill="currentColor" viewBox="0 0 20 20"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd"
-                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                                clip-rule="evenodd"></path>
-                                        </svg>
-                                        <span>Integração de funcionalidades avançadas</span>
-                                    </li>
-                                    <li>
-                                        <svg class="icon" fill="currentColor" viewBox="0 0 20 20"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd"
-                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                                clip-rule="evenodd"></path>
-                                        </svg>
-                                        <span>Otimização para SEO</span>
-                                    </li>
-
-                                </ul>
-
-                            </div>
-
-                            <img src="assets/img/4115337.jpg" class="image 1">
-
-                        </div>
-                        <!-- Row 2 -->
-                        <div class="row reverse animate__animated animate__fadeInLeft">
-
-                            <div class="text-content">
-                                <h3 class="h3 hero-title half-border">2.Helpdesk</h3>
-                                <p style="font-size: 16px;">
-                                    Nosso serviço de Helpdesk oferece suporte técnico especializado para resolver
-                                    rapidamente problemas de TI. Além disso, realizamos manutenção preventiva e corretiva,
-                                    garantindo a gestão eficiente de redes e infraestrutura de TI, para que as operações do
-                                    seu negócio não sejam interrompidas.
-                                </p>
-                                <!-- List -->
-                                <ul class="list">
-                                    <li>
-                                        <svg class="icon" fill="currentColor" viewBox="0 0 20 20"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd"
-                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                                clip-rule="evenodd"></path>
-                                        </svg>
-                                        <span>Suporte técnico especializado</span>
-                                    </li>
-                                    <li>
-                                        <svg class="icon" fill="currentColor" viewBox="0 0 20 20"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd"
-                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                                clip-rule="evenodd"></path>
-                                        </svg>
-                                        <span>Solução rápida de problemas de TI</span>
-                                    </li>
-                                    <li>
-                                        <svg class="icon" fill="currentColor" viewBox="0 0 20 20"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd"
-                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                                clip-rule="evenodd"></path>
-                                        </svg>
-                                        <span>Manutenção preventiva e corretiva</span>
-                                    </li>
-                                    <li>
-                                        <svg class="icon" fill="currentColor" viewBox="0 0 20 20"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd"
-                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                                clip-rule="evenodd"></path>
-                                        </svg>
-                                        <span>Gestão de redes e infraestrutura de TI</span>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <img class="image" src="assets/img/help.svg" alt="feature image 2">
-                        </div>
-                        <!-- Row 3-->
-                        <div class="row animate__animated animate__fadeInRight">
-                            <div class="text-content">
-                                <h3 class="h3 hero-title half-border">3.Consultoria Econômica e Informática</h3>
-                                <p style="font-size:16px;">
-                                    A consultoria econômica e informática proporciona uma análise e planejamento estratégico
-                                    completos para melhorar a gestão financeira e econômica das empresas. Implementamos
-                                    sistemas de informação eficazes e oferecemos treinamentos e workshops em tecnologia e
-                                    gestão para capacitar sua equipe
-                                </p>
-                                <!-- List -->
-                                <ul class="list">
-                                    <li>
-                                        <svg class="icon" fill="currentColor" viewBox="0 0 20 20"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd"
-                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                                clip-rule="evenodd"></path>
-                                        </svg>
-                                        <span>Análise e planejamento estratégico</span>
-                                    </li>
-                                    <li>
-                                        <svg class="icon" fill="currentColor" viewBox="0 0 20 20"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd"
-                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                                clip-rule="evenodd"></path>
-                                        </svg>
-                                        <span>Consultoria em gestão financeira e econômica</span>
-                                    </li>
-                                    <li>
-                                        <svg class="icon" fill="currentColor" viewBox="0 0 20 20"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd"
-                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                                clip-rule="evenodd"></path>
-                                        </svg>
-                                        <span>Implementação de sistemas de informação</span>
-                                    </li>
-                                    <li>
-                                        <svg class="icon" fill="currentColor" viewBox="0 0 20 20"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd"
-                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                                clip-rule="evenodd"></path>
-                                        </svg>
-                                        <span>Treinamentos e workshops em tecnologia e gestão</span>
-                                    </li>
-                                </ul>
-
-                            </div>
-
-                            <img src="assets/img/7199773.jpg" class="image">
-
-                        </div>
-                        <!-- Row 4-->
-                        <div class="row reverse animate__animated animate__fadeInLeft">
-                            <div class="text-content">
-                                <h3 class="h3 hero-title half-border">4. Marketing</h3>
-                                <p style="font-size: 16px;">
-                                    Nosso serviço de marketing abrange a criação de identidade visual, gestão de redes
-                                    sociais e criação de conteúdos, ajudando sua marca a se destacar no mercado e atingir
-                                    seu público-alvo de forma eficaz.
-                                </p>
-                                <!-- List -->
-                                <ul class="list">
-                                    <li>
-                                        <svg class="icon" fill="currentColor" viewBox="0 0 20 20"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd"
-                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                                clip-rule="evenodd"></path>
-                                        </svg>
-                                        <span>Criação de identidade visual</span>
-                                    </li>
-                                    <li>
-                                        <svg class="icon" fill="currentColor" viewBox="0 0 20 20"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd"
-                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                                clip-rule="evenodd"></path>
-                                        </svg>
-                                        <span>Gestão de redes sociais</span>
-                                    </li>
-                                    <li>
-                                        <svg class="icon" fill="currentColor" viewBox="0 0 20 20"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd"
-                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                                clip-rule="evenodd"></path>
-                                        </svg>
-                                        <span>Criação de conteúdos</span>
-                                    </li>
-                                </ul>
-                            </div>
-                            <img class="image" src="assets/img/5895736.jpg" alt="feature image 4">
-                        </div>
-                    </div>
-                </section>
-                <section class="portfolio-section animate__animated animate__fadeIn" id="portfolio" aria-label="portfolio">
-                    <div class="container">
-                        <h2 class="h1 hero-title">Nosso Portfólio</h2>
-                        <p>Explore nossos projetos mais recentes e veja como ajudamos nossos clientes a alcançar seus
-                            objetivos com soluções inovadoras e personalizadas.</p>
-                        <div class="portfolio-grid">
-                            <div class="portfolio-item">
-                                <img src="assets/img/folio1.png" alt="Projeto 1">
-                                <div class="overlay">
-                                    <h3>Sabo Alberto</h3>
-                                    <a href="https://sabocarlos.github.io/saboportfolio/" class="visit-btn">Visitar</a>
-                                </div>
-                            </div>
-                            <div class="portfolio-item">
-                                <img src="assets/img/folio3.png" alt="Projeto 2">
-                                <div class="overlay">
-                                    <h3>Mantra</h3>
-                                    <a href="http://mantra.co.mz" class="visit-btn">Visitar</a>
-                                </div>
-                            </div>
-                            <div class="portfolio-item">
-                                <img src="assets/img/folio2.jpg" alt="Projeto 3">
-                                <div class="overlay">
-                                    <h3>Revista Ndzila</h3>
-                                    <a href="http://ndzila.co.mz" class="visit-btn">Visitar</a>
-                                </div>
-                            </div>
-                            <div class="portfolio-item">
-                                <img src="assets/img/folio4.jpg" alt="Projeto 4">
-                                <div class="overlay">
-                                    <h3>Nhonga</h3>
-                                    <a href="http://nhongamz.com" class="visit-btn">Visitar</a>
-                                </div>
-                            </div>
-                            <div class="portfolio-item">
-                                <img src="assets/img/folio5.jpg" alt="Projeto 5">
-                                <div class="overlay">
-                                    <h3>Set Connect</h3>
-                                    <a href="setconnect.vercel.app" class="visit-btn">Visitar</a>
-                                </div>
-                            </div>
-                            <div class="portfolio-item">
-                                <img src="assets/img/folio6.jpg" alt="Projeto 6">
-                                <div class="overlay">
-                                    <h3>Marcooden</h3>
-                                    <a href="http://marcooden.com" class="visit-btn">Visitar</a>
-                                </div>
-                            </div>
-                            <div class="portfolio-item">
-                                <img src="assets/img/folio7.jpg" alt="Projeto 5">
-                                <div class="overlay">
-                                    <h3>Chat Community</h3>
-                                    <a href="gsetcommunity.com" class="visit-btn">Visitar</a>
-                                </div>
-                            </div>
-                            <div class="portfolio-item">
-                                <img src="assets/img/folio8.jpg" alt="Projeto 8">
-                                <div class="overlay">
-                                    <h3>jotec</h3>
-                                    <a href="jotec.vercel.app" class="visit-btn">Visitar</a>
-                                </div>
-                            </div>
-                            <div class="portfolio-item">
-                                <img src="assets/img/folio9.jpg" alt="Projeto 9">
-                                <div class="overlay">
-                                    <h3>OJM Connect</h3>
-                                    <a href="ojmconnect.com" class="visit-btn">Visitar</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="team-section animate__animated animate__fadeIn" id="equipe" aria-label="equipe">
-                    <div class="container">
-                        <h2 class="h1 hero-title">Nosso Time</h2>
-                        <p>Conheça os profissionais dedicados e talentosos que fazem parte do Grupo Sét. Nossa equipe está
-                            comprometida em fornecer soluções inovadoras e eficientes para nossos clientes.</p>
-                        <div class="team-grid">
-                            <div class="team-member">
-                                <div><img src="assets/img/person_1-min.jpg" alt="Membro da equipe 1" class="member-photo">
-                                </div>
-
-                                <div class="member-info">
-                                    <h3>Jean Del Castillo</h3>
-                                    <p>Economista</p>
-                                    <p class="profile-description">Jean Del Castillo é um economista talentoso do Grupo Sét. Ele possui vasta experiência em análises econômicas e planejamento financeiro.</p>
-                                </div>
-                                
-                            </div>
-                            <div class="team-member">
-                                <img src="assets/img/person_2-min.jpg" alt="Membro da equipe 2" class="member-photo">
-                                <div class="member-info">
-                                    <h3>Sabo Alberto</h3>
-                                    <p>TI/Programador</p>
-                                    <p class="profile-description">Sabo Alberto é um talentoso profissional de TI e programador no Grupo Sét. Com uma vasta experiência em desenvolvimento de software e suporte técnico.</p>
-                                </div>
-                                
-                            </div>
-                            <div class="team-member">
-                                <img src="assets/img/person_3-min.jpg" alt="Membro da equipe 3" class="member-photo">
-                                <div class="member-info">
-                                    <h3>Osman Machavate</h3>
-                                    <p>TI/Programador</p>
-                                    <p class="profile-description">Osman Machavate é um talentoso profissional de TI e programador no Grupo Sét. Com uma sólida experiência em desenvolvimento de software e suporte técnico.</p>
-                                </div>
-                                
-                            </div>
-
-                        </div>
-                    </div>
-                </section>
-                <section class="newsletter-section animate__animated animate__fadeIn">
-                    <div class="container" id="mc_embed_shell">
-                        <div id="mc_embed_signup">
-                            <h2 class="h3">Inscreva-se na Nossa Newsletter</h2>
-                            <p>Receba as últimas atualizações e novidades diretamente no seu email. Inscreva-se agora e fique
-                                por dentro de tudo que acontece no Grupo Sét.</p>
-                            <form action="https://setgrupo.us9.list-manage.com/subscribe/post?u=2044b1a0bc0d3040ac95ea6a5&amp;id=e9715d45bf&amp;f_id=008557e1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="newsletter-form validate" target="_blank">
-                                <div class="mc-field-group">
-                                    <input type="email" placeholder="Digite seu email"  name="EMAIL" id="mce-EMAIL" required>
-                                </div>
-                                <div id="mce-responses" class="clear foot">
-                                    <div class="response" id="mce-error-response" style="display: none;"></div>
-                                    <div class="response" id="mce-success-response" style="display: none;"></div>
-                                </div>
-                                <button type="submit" name="subscribe" id="mc-embedded-subscribe" value="Subscribe">
-                                    <span class="span">Inscrever-se</span>
-                                    <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
-                                </button>
-                                
-                            </form>
-                        </div>
-                    </div>
-                </section>
-                
-
-                <section class="section contact animate__animated animate__fadeIn" id="contact" aria-label="contact">
-                    <div class="container">
-
-
-                    <div class="contact-content">
-                        <h2 class="h1 hero-title" style="font-size: 26px;">Contate-Nos</h2>
-
-                        <p class="section-text">
-                            Por favor, preencha o formulário nesta seção para entrar em contacto conosco ou entre em contato por telefone
-                        </p>
-
-                        <ul class="contact-list">
-
-                            <ul class="contact-list">
-
-                                <li class="contact-item">
-                                    <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
-
-                                    <address class="contact-link">
-                                        Rua da Nachingwea, nº 560, Bairro da Polana Cimento A, Maputo, Moçambique
-                                    </address>
-                                </li>
-
-                                <li class="contact-item">
-                                    <i class="fa-solid fa-phone" aria-hidden="true"></i>
-
-                                    <a href="tel:+258842756666" class="contact-link">+258 84275 6666</a>
-                                </li>
-
-                                <li class="contact-item">
-                                    <i class="fa-solid fa-envelope" aria-hidden="true"></i>
-
-                                    <a href="mailto:comercial@gruposet.com"
-                                        class="contact-link">comercial@setgrupo.com</a>
-                                </li>
-
-
-
-                            </ul>
-
-                        </div>
-
-                        <form action="" class="contact-form" method="POST">
-
-                            <input type="text" name="Name" aria-label="name" placeholder="Nome" required
-                                class="input-field">
-
-                            <input type="email" name="Email" aria-label="email" placeholder="Email" required
-                                class="input-field">
-
-                            <textarea name="Message" aria-label="message" placeholder="Messagem" required
-                                class="input-field"></textarea>
-
-                            <button type="submit" class="submit-btn">
-                                <span class="span">Enviar</span>
-
-                                <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
-                            </button>
-
-                        </form>
-
-                    </div>
-                </section>
-
-            </article>
-        </main>
-
-
-        <footer class="footer">
-            <div class="container">
-
-                <p class="copyright">
-                    &copy; 2024 Grupo Set
-                </p>
-
-                <ul class="social-list">
-
-                    <li>
-                        <a href="https://www.facebook.com/sabocarlosalberto" class="social-link">
-                            <i class="fa-brands fa-facebook"></i>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="https://www.linkedin.com/in/sabo-alberto-b92b96268" class="social-link">
-                            <i class="fa-brands fa-linkedin"></i>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="https://www.instagram.com/gruposet.lda?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="social-link">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="social-link">
-                            <i class="fa-brands fa-whatsapp"></i>
-                        </a>
-                    </li>
-
-                </ul>
-
+            <div class="col-lg-4 text-center text-lg-end">
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-facebook-f fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-linkedin-in fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-instagram fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-whatsapp fw-normal"></i></a>
+                </div>
             </div>
-        </footer>
+        </div>
+    </div>
+    <!-- Topbar End -->
 
 
+    <!-- Navbar & Carousel Start -->
+    <div class="container-fluid position-relative p-0">
+        <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
+            <a href="index.html" class="navbar-brand p-0">
+                <img src="/assets/img/logo-dia.png" width="90px" height="50px" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="#about" class="nav-item nav-link">Sobre nos</a>
+                    <a href="#service" class="nav-item nav-link">Servicos</a>
+                    <!--<div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="price.html" class="dropdown-item">Pricing Plan</a>
+                            <a href="feature.html" class="dropdown-item">Our features</a>
+                            <a href="team.html" class="dropdown-item">Team Members</a>
+                            <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                            <a href="quote.html" class="dropdown-item">Free Quote</a>
+                        </div>
+                    </div>-->
+                    <a href="contact.html" class="nav-item nav-link">Contactos</a>
+                </div>
+                <butaton type="button" class="btn text-primary ms-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></butaton>
+            </div>
+        </nav>
 
-        <script type="text/javascript">
-            function googleTranslateElementInit() {
-            new google.translate.TranslateElement({pageLanguage: 'pt', includedLanguages: 'en,pt'}, 'google_translate_element');
-            }
-        </script>
-        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-            
-        <script src="assets/js/script.js"></script>
-    </body>
+        <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src="/assets/img/c1.jpg" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h5 class="text-white text-uppercase mb-3 animated slideInDown">Empresa Jovem</h5>
+                            <h1 class="display-1 text-white mb-md-4 animated zoomIn">Criatividade e Inovaçao Digitais</h1>
+                            <a href="quote.html" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Cotaçao gratis</a>
+                            <a href="" class="btn btn-outline-light py-md-3 px-md-5 animated slideInRight">Contacte-nos</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="/assets/img/c2.jpg" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">Criatividade e Inovaçao Digitais
+                            <h5 class="text-white text-uppercase mb-3 animated slideInDown">Empresa Jovem</h5>
+                            <h1 class="display-1 text-white mb-md-4 animated zoomIn">Criatividade e Inovaçao Digitais</h1>
+                            <a href="quote.html" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Cotaçao gratis</a>
+                            <a href="" class="btn btn-outline-light py-md-3 px-md-5 animated slideInRight">Contacte-nos</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- Navbar & Carousel End -->
+
+
+    <!-- Full Screen Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content" style="background: rgba(9, 30, 62, .7);">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center justify-content-center">
+                    <div class="input-group" style="max-width: 600px;">
+                        <input type="text" class="form-control bg-transparent border-primary p-3" placeholder="Type search keyword">
+                        <button class="btn btn-primary px-4"><i class="bi bi-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Full Screen Search End -->
+
+
+    <!-- Facts Start -->
+    <div class="container-fluid facts py-5 pt-lg-0">
+        <div class="container py-5 pt-lg-0">
+            <div class="row gx-0">
+                <div class="col-lg-6 wow zoomIn" data-wow-delay="0.1s">
+                    <div class="bg-primary shadow d-flex align-items-center justify-content-center p-4" style="height: 150px;">
+                        <div class="bg-white d-flex align-items-center justify-content-center rounded mb-2" style="width: 60px; height: 60px;">
+                            <i class="fa fa-users text-primary"></i>
+                        </div>
+                        <div class="ps-4">
+                            <h5 class="text-white mb-0">Clientes satisfeitos</h5>
+                            <h1 class="text-white mb-0" data-toggle="counter-up">20</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow zoomIn" data-wow-delay="0.3s">
+                    <div class="bg-light shadow d-flex align-items-center justify-content-center p-4" style="height: 150px;">
+                        <div class="bg-primary d-flex align-items-center justify-content-center rounded mb-2" style="width: 60px; height: 60px;">
+                            <i class="fa fa-check text-white"></i>
+                        </div>
+                        <div class="ps-4">
+                            <h5 class="text-primary mb-0">Projectos terminados</h5>
+                            <h1 class="mb-0" data-toggle="counter-up">18</h1>
+                        </div>
+                    </div>
+                </div>
+                <!--<div class="col-lg-4 wow zoomIn" data-wow-delay="0.6s">
+                    <div class="bg-primary shadow d-flex align-items-center justify-content-center p-4" style="height: 150px;">
+                        <div class="bg-white d-flex align-items-center justify-content-center rounded mb-2" style="width: 60px; height: 60px;">
+                            <i class="fa fa-award text-primary"></i>
+                        </div>
+                        <div class="ps-4">
+                            <h5 class="text-white mb-0">Win Awards</h5>
+                            <h1 class="text-white mb-0" data-toggle="counter-up">12345</h1>
+                        </div>
+                    </div>
+                </div>-->
+            </div>
+        </div>
+    </div>
+    <!-- Facts Start -->
+
+
+    <!-- About Start -->
+    <div id="about" class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-7">
+                    <div class="section-title position-relative pb-3 mb-5">
+                        <h5 class="fw-bold text-primary text-uppercase">Sobre nos</h5>
+                        <h1 class="mb-0">Empresa experiente no ramo de desenvolvimento +4 anos</h1>
+                    </div>
+                    <p class="mb-4">
+                        O Grupo Sét é uma empresa dedicada a fornecer soluções inovadoras e eficientes em tecnologia e consultoria. 
+                        Nossa missão é ajudar empresas e indivíduos a alcançar seus objetivos através de serviços de alta qualidade e suporte especializado. 
+                        Com uma equipe experiente e comprometida, garantimos que nossos clientes recebam o melhor em termos de desenvolvimento web, suporte 
+                        técnico e consultoria econômica e informática. 
+                    </p>
+                    <div class="row g-0 mb-3">
+                        <div class="col-sm-6 wow zoomIn" data-wow-delay="0.2s">
+                            <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Equipe Especializada</h5>
+                            <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Compromisso</h5>
+                        </div>
+                        <div class="col-sm-6 wow zoomIn" data-wow-delay="0.4s">
+                            <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Suporte 24/7</h5>
+                            <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Preços Justos</h5>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center mb-4 wow fadeIn" data-wow-delay="0.6s">
+                        <div class="bg-primary d-flex align-items-center justify-content-center rounded" style="width: 60px; height: 60px;">
+                            <i class="fa fa-phone-alt text-white"></i>
+                        </div>
+                        <div class="ps-4">
+                            <h5 class="mb-2">Ligue para qualquer questao</h5>
+                            <h4 class="text-primary mb-0">+258874941509</h4>
+                        </div>
+                    </div>
+                    <a href="quote.html" class="btn btn-primary py-3 px-5 mt-3 wow zoomIn" data-wow-delay="0.9s">Pedir Cotaçao</a>
+                </div>
+                <div class="col-lg-5" style="min-height: 500px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s" src="/assets/img/about.jpg" style="object-fit: cover;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Features Start -->
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+                <h5 class="fw-bold text-primary text-uppercase">Porque nos escolher?</h5>
+                <h1 class="mb-0">Somos uma empresa jovem e promissora crescendo exponecialmente no mercado</h1>
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-4">
+                    <div class="row g-5">
+                        <div class="col-12 wow zoomIn" data-wow-delay="0.2s">
+                            <div class="bg-primary rounded d-flex align-items-center justify-content-center mb-9" style="width: 60px; height: 60px;">
+                                <i class="fa fa-cubes text-white"></i>
+                            </div>
+                            <h4>Melhor na industria de Densevolvimento em Moçambique</h4>
+                            <p class="mb-0">Especializados na area de tecnologias em Moçambique, com tecnicos para a area supracitada</p>
+                        </div>
+                        <div class="col-12 wow zoomIn" data-wow-delay="0.6s">
+                            <div class="bg-primary rounded d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                                <i class="fa fa-award text-white"></i>
+                            </div>
+                            <h4>Compromisso com os nossos clientes</h4>
+                            <p class="mb-0">Cumprimos com todas as agendas combinadas com o cliente de modo a manter a imagem de ambas entidades limpas,
+                                sem falar da qualidade dos serviços prestados.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4  wow zoomIn" data-wow-delay="0.9s" style="min-height: 350px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.1s" src="/assets/img/feature.jpg" style="object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="row g-5">
+                        <div class="col-12 wow zoomIn" data-wow-delay="0.4s">
+                            <div class="bg-primary rounded d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                                <i class="fa fa-users-cog text-white"></i>
+                            </div>
+                            <h4>Desafios</h4>
+                            <p class="mb-0">Uma empresa composta por jovens sujeita a desafios, e sendo responsavel por garantir que os objectivos sejam alcançados</p>
+                        </div>
+                        <div class="col-12 wow zoomIn" data-wow-delay="0.8s">
+                            <div class="bg-primary rounded d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                                <i class="fa fa-phone-alt text-white"></i>
+                            </div>
+                            <h4>Peritos em Tecnologia</h4>
+                            <p class="mb-0">Quando se fala em tecnologia nos respondemos com certeza, e sempre a disposiçao de entender a inquietaçao do cliente</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Features Start -->
+
+
+    <!-- Service Start -->
+    <div id="service" class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+                <h5 class="fw-bold text-primary text-uppercase">Nossos Serviços</h5>
+                <h1 class="mb-0">Custom IT Solutions for Your Successful Business</h1>
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
+                    <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                        <div class="service-icon">
+                            <i class="fa fa-shield-alt text-white"></i>
+                        </div>
+                        <h4 class="mb-3">HelpDesk </h4>
+                        <p class="m-0">Garanta o funcionamento contínuo da sua tecnologia com nosso serviço de Helpdesk. Oferecemos suporte técnico rápido e remoto.
+                        <a class="btn btn-lg btn-primary rounded" href="">
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
+                    <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                        <div class="service-icon">
+                            <i class="fa fa-chart-pie text-white"></i>
+                        </div>
+                        <h4 class="mb-3">Consultoria Empresarial</h4>
+                        <p class="m-0">Transforme desafios em oportunidades com nossa consultoria empresarial. Analisamos seus processos, identificamos pontos de melhoria e criamos estratégias.
+                            </p>
+                        <a class="btn btn-lg btn-primary rounded" href="">
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.9s">
+                    <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                        <div class="service-icon">
+                            <i class="fa fa-code text-white"></i>
+                        </div>
+                        <h4 class="mb-3">Desenvolvimento Web</h4>
+                        <p class="m-0">Criação de soluções digitais sob medida para o seu negócio. Desenvolvemos websites modernos, responsivos e funcionais</p>
+                        <a class="btn btn-lg btn-primary rounded" href="">
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
+                    <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                        <div class="service-icon">
+                            <i class="fab fa-android text-white"></i>
+                        </div>
+                        <h4 class="mb-3">Densevolvimento De Aplicativos mobile</h4>
+                        <p class="m-0">Criação de soluções digitais sob medida para o seu negócio. Desenvolvemos websites modernos, responsivos e funcionais.
+                        </p>
+                        <a class="btn btn-lg btn-primary rounded" href="">
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
+                    <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                        <div class="service-icon">
+                            <i class="fa fa-search text-white"></i>
+                        </div>
+                        <h4 class="mb-3">Marketing Digital</h4>
+                        <p class="m-0">Aumente sua presença online e alcance o público certo com nossas estratégias de marketing digital. Trabalhamos com SEO, gestão de redes sociais e muito mais.
+                        <a class="btn btn-lg btn-primary rounded" href="">
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.9s">
+                    <div class="position-relative bg-primary rounded h-100 d-flex flex-column align-items-center justify-content-center text-center p-5">
+                        <h3 class="text-white mb-3">Ligue-nos para cotaçao</h3>
+                        <p class="text-white mb-3">esclareça toadas as duvidas se comunicando directamente com o contacao acima ou noutros meios existentes no website</p>
+                        <h2 class="text-white mb-0">+258874941509</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+    <!-- Pricing Plan Start -->
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+                <h5 class="fw-bold text-primary text-uppercase">Planos</h5>
+                <h1 class="mb-0">Nos oferecemos preços competitivos no mercado</h1>
+            </div>
+            <div class="row g-0">
+                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.6s">
+                    <div class="bg-light rounded">
+                        <div class="border-bottom py-4 px-5 mb-4">
+                            <h4 class="text-primary mb-1">Plano Basico</h4>
+                            <small class="text-uppercase">Para pequenos negocios/ singular</small>
+                        </div>
+                        <div class="p-5 pt-0">
+                            <h1 class="display-5 mb-3">
+                                <small class="align-top" style="font-size: 22px; line-height: 45px;"> apartir de $</small>300<small
+                                    class="align-bottom" style="font-size: 16px; line-height: 40px;"></small>
+                            </h1>
+
+                            class="fa fa-times text-danger pt-1"
+                            <div class="d-flex justify-content-between mb-3"><span>Criação de um website profissional e responsivo.</span><i class="fa fa-check text-primary pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-3"><span>Logotipo exclusivo para sua marca</span><i class="fa fa-check text-primary pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-3"><span>Banner promocional personalizado.</span><i class="fa fa-check text-primary pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-2"><span>Hospedagem gratuita por 1 mês.</span><i class="fa fa-check text-primary pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-2"><span>Domínio gratuito por 1 ano.</span><i class="fa fa-check text-primary pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-2"><span>Configuração inicial de redes sociais (Facebook e Instagram)</span><i class="fa fa-check text-primary pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-2"><span>Suporte técnico prioritário, disponível durante e fora do horário de funcionamento.</span><i class="fa fa-times text-danger pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-2"><span>Manutenção gratuita por 3 meses, incluindo atualizações e ajustes no site.</span><i class="fa fa-times text-danger pt-1"></i></div>
+                            <a href="" class="btn btn-primary py-2 px-4 mt-4">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
+                    <div class="bg-white rounded shadow position-relative" style="z-index: 1;">
+                        <div class="border-bottom py-4 px-5 mb-4">
+                            <h4 class="text-primary mb-1">Plano Standart</h4>
+                            <small class="text-uppercase">Para medias empresas</small>
+                        </div>
+                        <div class="p-5 pt-0">
+                            <h1 class="display-5 mb-3">
+                                <small class="align-top" style="font-size: 22px; line-height: 45px;">apartir de $</small>400<small
+                                    class="align-bottom" style="font-size: 16px; line-height: 40px;"></small>
+                            </h1>
+                            <div class="d-flex justify-content-between mb-3"><span>Website profissional e responsivo, com até 10 páginas.</span><i class="fa fa-check text-primary pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-3"><span>Logotipo exclusivo e banners para campanhas.</span><i class="fa fa-check text-primary pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-3"><span>Hospedagem gratuita por 1 mês.</span><i class="fa fa-check text-primary pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-2"><span>Domínio gratuito por 1 ano.</span><i class="fa fa-check text-primary pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-2"><span>Campanha básica de marketing digital (Google Ads ou Facebook Ads).</span><i class="fa fa-check text-primary pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-2"><span>Suporte técnico no horário de funcionamento da empresa.</span><i class="fa fa-check text-primary pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-2"><span>Configuração avançada de redes sociais (Facebook, Instagram e LinkedIn).</span><i class="fa fa-check text-primary pt-1"></i></div>
+                            <a href="" class="btn btn-primary py-2 px-4 mt-4">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.9s">
+                    <div class="bg-light rounded">
+                        <div class="border-bottom py-4 px-5 mb-4">
+                            <h4 class="text-primary mb-1">Plano Avançado</h4>
+                            <small class="text-uppercase">Para empresas de grande vergadura</small>
+                        </div>
+                        <div class="p-5 pt-0">
+                            <h1 class="display-5 mb-3">
+                                <small class="align-top" style="font-size: 22px; line-height: 45px;">apartir de $</small>650<small
+                                    class="align-bottom" style="font-size: 16px; line-height: 40px;"></small>
+                            </h1>
+                            <div class="d-flex justify-content-between mb-3"><span>Website avançado, com design personalizado, até 15 páginas e suporte a e-commerce (se necessário).</span><i class="fa fa-check text-primary pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-3"><span>Hospedagem gratuita por 1 mês e configuração de servidores personalizados..</span><i class="fa fa-check text-primary pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-3"><span> Domínio gratuito por 1 ano.</span><i class="fa fa-check text-primary pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-2"><span>Campanha avançada de marketing digital, incluindo SEO, Google Ads e redes sociais.</span><i class="fa fa-check text-primary pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-2"><span>Suporte técnico prioritário, disponível durante e fora do horário de funcionamento.</span><i class="fa fa-check text-primary pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-2"><span>Manutenção gratuita por 3 meses, incluindo atualizações e ajustes no site.</span><i class="fa fa-check text-primary pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-2"><span></span></div>
+                            <a href="" class="btn btn-primary py-2 px-4 mt-4">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Pricing Plan End -->
+
+
+    <!-- Quote Start -->
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-7">
+                    <div class="section-title position-relative pb-3 mb-5">
+                        <h5 class="fw-bold text-primary text-uppercase">Pedir Cotaçao</h5>
+                        <h1 class="mb-0">Sinta-se livre  para pedir cotaçao!</h1>
+                    </div>
+                    <div class="row gx-3">
+                        <div class="col-sm-6 wow zoomIn" data-wow-delay="0.2s">
+                            <h5 class="mb-4"><i class="fa fa-reply text-primary me-3"></i>Respondemos antes de 24h</h5>
+                        </div>
+                        <div class="col-sm-6 wow zoomIn" data-wow-delay="0.4s">
+                            <h5 class="mb-4"><i class="fa fa-phone-alt text-primary me-3"></i>Suporte ao telefone 24h</h5>
+                        </div>
+                    </div>
+                    <p class="mb-4">Estamos disponiveis para qualquer suporte, disponiveis a qualquer momento para cuidar de si e a sua empresa</p>
+                    <div class="d-flex align-items-center mt-2 wow zoomIn" data-wow-delay="0.6s">
+                        <div class="bg-primary d-flex align-items-center justify-content-center rounded" style="width: 60px; height: 60px;">
+                            <i class="fa fa-phone-alt text-white"></i>
+                        </div>
+                        <div class="ps-4">
+                            <h5 class="mb-2">Ligue para mais questoes</h5>
+                            <h4 class="text-primary mb-0">+258874941509</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="bg-primary rounded h-100 d-flex align-items-center p-5 wow zoomIn" data-wow-delay="0.9s">
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-xl-12">
+                                    <input type="text" class="form-control bg-light border-0" placeholder="Seu Nome" style="height: 55px;">
+                                </div>
+                                <div class="col-12">
+                                    <input type="email" class="form-control bg-light border-0" placeholder="Seu Email" style="height: 55px;">
+                                </div>
+                                <div class="col-12">
+                                    <select class="form-select bg-light border-0" style="height: 55px;">
+                                        <option value="1">Densevolvimento Web</option>
+                                        <option value="2">Densevolvimento de App</option>
+                                        <option value="3">Consultoria</option>
+                                        <option value="3">Helpdesk</option>
+                                        <option value="3">Marketing</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <textarea class="form-control bg-light border-0" rows="3" placeholder="Messagem"></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-dark w-100 py-3" type="submit">Requisitar Contaçao</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Quote End -->
+
+    <!-- Testimonial  
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="section-title text-center position-relative pb-3 mb-4 mx-auto" style="max-width: 600px;">
+                <h5 class="fw-bold text-primary text-uppercase">Testemunho</h5>
+                <h1 class="mb-0">What Our Clients Say About Our Digital Services</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.6s">
+                <div class="testimonial-item bg-light my-4">
+                    <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
+                        <img class="img-fluid rounded" src="img/testimonial-1.jpg" style="width: 60px; height: 60px;" >
+                        <div class="ps-4">
+                            <h4 class="text-primary mb-1">Client Name</h4>
+                            <small class="text-uppercase">Profession</small>
+                        </div>
+                    </div>
+                    <div class="pt-4 pb-5 px-5">
+                        Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
+                    </div>
+                </div>
+                <div class="testimonial-item bg-light my-4">
+                    <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
+                        <img class="img-fluid rounded" src="img/testimonial-2.jpg" style="width: 60px; height: 60px;" >
+                        <div class="ps-4">
+                            <h4 class="text-primary mb-1">Client Name</h4>
+                            <small class="text-uppercase">Profession</small>
+                        </div>
+                    </div>
+                    <div class="pt-4 pb-5 px-5">
+                        Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
+                    </div>
+                </div>
+                <div class="testimonial-item bg-light my-4">
+                    <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
+                        <img class="img-fluid rounded" src="img/testimonial-3.jpg" style="width: 60px; height: 60px;" >
+                        <div class="ps-4">
+                            <h4 class="text-primary mb-1">Client Name</h4>
+                            <small class="text-uppercase">Profession</small>
+                        </div>
+                    </div>
+                    <div class="pt-4 pb-5 px-5">
+                        Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
+                    </div>
+                </div>
+                <div class="testimonial-item bg-light my-4">
+                    <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
+                        <img class="img-fluid rounded" src="img/testimonial-4.jpg" style="width: 60px; height: 60px;" >
+                        <div class="ps-4">
+                            <h4 class="text-primary mb-1">Client Name</h4>
+                            <small class="text-uppercase">Profession</small>
+                        </div>
+                    </div>
+                    <div class="pt-4 pb-5 px-5">
+                        Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>-->
+
+    <!-- Team Start -->
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+                <h5 class="fw-bold text-primary text-uppercase">Membros da Equipe</h5>
+                <h1 class="mb-0">Profissionais da Equipe Disponiveis para trabalhar no seu assunto</h1>
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
+                    <div class="team-item bg-light rounded overflow-hidden">
+                        <div class="team-img position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="/assets/img/person_1-min.jpg" alt="">
+                            <div class="team-social">
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-linkedin-in fw-normal"></i></a>
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href="https://wa.me/874941509?text=Olá, gostaria de saber mais sobre serviços do grupo set!" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp fw-normal"></i></a>
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href="+258874941509"><i class="fab bi-telephone-fill fw-normal"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center py-4">
+                            <h4 class="text-primary">Jean Del Castilo</h4>
+                            <p class="text-uppercase m-0">Economista</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.6s">
+                    <div class="team-item bg-light rounded overflow-hidden">
+                        <div class="team-img position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="/assets/img/person_2-min.jpg" alt="">
+                            <div class="team-social">
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-linkedin-in fw-normal"></i></a>
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href="https://wa.me/842756666?text=Olá, gostaria de saber mais sobre serviços do grupo set!" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp fw-normal"></i></a>
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href="tel:+258842756666"><i class="fab bi-telephone-fill fw-normal"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center py-4">
+                            <h4 class="text-primary">Sabo Alberto</h4>
+                            <p class="text-uppercase m-0">Programador</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.9s">
+                    <div class="team-item bg-light rounded overflow-hidden">
+                        <div class="team-img position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="/assets/img/person_3-min.jpg" alt="">
+                            <div class="team-social">
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-linkedin-in fw-normal"></i></a>
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href="https://wa.me/864680060?text=Olá, gostaria de saber mais sobre serviços do grupo set!" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp fw-normal"></i></a>
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href="tel:+258843680060"><i class="fab bi-telephone-fill fw-normal"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center py-4">
+                            <h4 class="text-primary">Osmane Machavate</h4>
+                            <p class="text-uppercase m-0">Programador</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+
+
+    <!-- Blog Start -->
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+                <h5 class="fw-bold text-primary text-uppercase">Nosso Portifolio</h5>
+                <h1 class="mb-0">Aprecie os trablhos feitos pelo Grupo Set!</h1>
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
+                    <div class="blog-item bg-light rounded overflow-hidden">
+                        <div class="blog-img position-relative overflow-hidden">
+                            <img class="img-fluid" src="/assets/img/jotec.jpg" alt="">
+                            <a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="">Jotec</a>
+                        </div>
+                        <div class="p-4">
+                            <div class="d-flex mb-3">
+                                <small><i class="far fa-calendar-alt text-primary me-2"></i>01 Jan, 2045</small>
+                            </div>
+                            <p>Website para representar a identidade visual da empresa jotec, focada na area de construçao e mobilia</p>
+                            <a class="text-uppercase" href="matra.co.mz">Visitar <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.6s">
+                    <div class="blog-item bg-light rounded overflow-hidden">
+                        <div class="blog-img position-relative overflow-hidden">
+                            <img class="img-fluid" src="/assets/img/nhonga.jpg" alt="">
+                            <a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="">Nhongamz</a>
+                        </div>
+                        <div class="p-4">
+                            <div class="d-flex mb-3">
+                                <small><i class="far fa-calendar-alt text-primary me-2"></i>01 Jan, 2045</small>
+                            </div>
+                            <p>Um e-commerce 100% Moçambicao que visa dinamizar as ecnomendas automatizadas em Moçambique</p>
+                            <a class="text-uppercase" href="">Visitar <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.9s">
+                    <div class="blog-item bg-light rounded overflow-hidden">
+                        <div class="blog-img position-relative overflow-hidden">
+                            <img class="img-fluid" src="/assets/img/marcooden.jpg" alt="">
+                            <a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="">Marcooden</a>
+                        </div>
+                        <div class="p-4">
+                            <div class="d-flex mb-3">
+                                <small><i class="far fa-calendar-alt text-primary me-2"></i>01 Jan, 2045</small>
+                            </div>
+                            <p>Uma plataforma de investimento moçambique que permmitira ajudar os jovens emprendedores e investidores</p>
+                            <a class="text-uppercase" href="">Visitar <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Blog Start -->
+
+
+    <!-- Vendor Start -->
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5 mb-5">
+            <div class="bg-white">
+                <div class="owl-carousel vendor-carousel">
+                    <img src="/assets/img/ndzila.png" alt="">
+                    <img src="/assets/img/vendor-4.jpg" alt="">
+                    <img src="/assets/img/vendor-2.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Vendor End -->
+    
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light mt-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="row gx-5">
+                <div class="col-lg-4 col-md-6 footer-about">
+                    <div class="d-flex flex-column align-items-center justify-content-center text-center h-100 bg-primary p-4">
+                        <a href="index.html" class="navbar-brand">
+                            <img src="/assets/img/logo-dia.png" width="90px" height="50px" />
+                        </a>
+                        <p class="mt-3 mb-4">Subscreva-se no newsletter e fique atualizado de todas as novidades, e para receber ofertas promocionais com chances de ganhar premios e ate seriços gratis</p>
+                        <form  action="https://setgrupo.us9.list-manage.com/subscribe/post?u=2044b1a0bc0d3040ac95ea6a5&amp;id=e9715d45bf&amp;f_id=008557e1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="newsletter-form validate" target="_blank">
+                            <div class="input-group mc-field-group">
+                                <input type="email" placeholder="Digite seu email"  name="EMAIL" id="mce-EMAIL" required>
+                                <button type="submit" name="subscribe" id="mc-embedded-subscribe" value="Subscribe" class="btn btn-dark">Sign Up</button>
+                            </div>
+                            <div id="mce-responses" class="clear foot">
+                                <div class="response" id="mce-error-response" style="display: none;"></div>
+                                <div class="response" id="mce-success-response" style="display: none;"></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-6">
+                    <div class="row gx-5">
+                        <div class="col-lg-4 col-md-12 pt-5 mb-5">
+                            <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                                <h3 class="text-light mb-0">Entre em contacto</h3>
+                            </div>
+                            <div class="d-flex mb-2">
+                                <i class="bi bi-geo-alt text-primary me-2"></i>
+                                <p class="mb-0">Avenida Nachingwea, Maputo</p>
+                            </div>
+                            <div class="d-flex mb-2">
+                                <i class="bi bi-envelope-open text-primary me-2"></i>
+                                <p class="mb-0">comercial@setgrupo.com</p>
+                            </div>
+                            <div class="d-flex mb-2">
+                                <i class="bi bi-telephone text-primary me-2"></i>
+                                <p class="mb-0">+258874941509</p>
+                            </div>
+                            <div class="d-flex mt-4">
+                                <a class="btn btn-primary btn-square me-2" href="https://wa.me/874941509?text=Olá, gostaria de saber mais sobre serviços do grupo set!" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp fw-normal"></i></a>
+                                <a class="btn btn-primary btn-square me-2" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
+                                <a class="btn btn-primary btn-square me-2" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                                <a class="btn btn-primary btn-square" href="#"><i class="fab fa-instagram fw-normal"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+                            <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                                <h3 class="text-light mb-0">Links Rapidos</h3>
+                            </div>
+                            <div class="link-animated d-flex flex-column justify-content-start">
+                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Sobre Nos</a>
+                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Nossos Servicos</a>
+                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Nossa Equipe</a>
+                                <a class="text-light" href="#"><i class="bi bi-arrow-right text-primary me-2"></i> Contacte-nos</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+                            <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                                <h3 class="text-light mb-0">Links Populares</h3>
+                            </div>
+                            <div class="link-animated d-flex flex-column justify-content-start">
+                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Sobre nos</a>
+                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Nossos Servicos</a>
+                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Nossa Equpe</a>
+                                <a class="text-light" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Contacte-nos</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid text-white" style="background: #061429;">
+        <div class="container text-center">
+            <div class="row justify-content-end">
+                <div class="col-lg-8 col-md-6">
+                    <div class="d-flex align-items-center justify-content-center" style="height: 75px;">
+                        <p class="mb-0">&copy; <a class="text-white border-bottom" href="#">Grupo Set</a>. Todos Direitos Reservados. 
+						
+						Desenvolvido por <a class="text-white border-bottom" href="#">Grupo Set</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/lib/wow/wow.min.js"></script>
+    <script src="/assets/lib/easing/easing.min.js"></script>
+    <script src="/assets/lib/waypoints/waypoints.min.js"></script>
+    <script src="/assets/lib/counterup/counterup.min.js"></script>
+    <script src="/assets/lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="/assets/js/main.js"></script>
+</body>
 
 </html>
